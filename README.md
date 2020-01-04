@@ -1,1 +1,192 @@
-# web-clone
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      .nav {
+        height:70px;
+        border-bottom: 1px solid black;
+        display: flex;
+        align-items: center;
+      }
+
+      .nav-right-items {
+        display: flex;
+        margin-left: auto;
+      }
+
+      .nav-item {
+        margin-left: 20px;
+      }
+
+      .title {
+        text-align: center;
+        font-size: 3.5rem;
+        font-weight: bold;
+      }
+
+      .subtitle {
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: 300;
+      }
+      
+      .main {
+        width: 1000px;
+        margin: 0 auto;
+        margin-top: 60px;
+      }
+
+      .prices {
+        display: flex;
+      }
+
+      .price-item {
+        width: 300px;
+        height: 350px;
+        border: 1px solid black;
+        margin: 20px;
+        border-radius: 4px;
+        text-align: center;
+      }
+
+      .price-item-title {
+        font-size: 1.5rem;
+        background-color: rgba(0,0,0,.03);
+        text-align: center;
+        height: 53px;
+        line-height: 53px;
+        border-bottom: 1px solid black;
+      }
+      
+      .price-item-price {
+        font-size: 2.5rem;
+        font-weight: bold;
+        padding: 20px;
+      }
+
+      .price-item-button {
+        padding: .5rem 1rem;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        border-radius: .3rem;
+        color: #007bff;
+        background-color: transparent;
+        background-image: none;
+        border-color: #007bff;
+        margin-top: 30px;
+      }
+
+      .price-item-button--active {
+        background-color: #007bff;
+        color: white;
+      }
+
+      .price-item-month {
+        font-size: 16px;
+        color: gray;
+      }
+
+      .price-item-detail {
+        margin-bottom: 5px;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="nav-right-items">
+        <div class="nav-item">Features</div>
+        <div class="nav-item">Enterprise</div>
+        <div class="nav-item">Support</div>
+        <div class="nav-item">Pricing</div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="title">
+        Pricing
+      </div>
+      <div class="subtitle">
+        Quickley build an effective pricing table for your ortential customers with this Booststrap eample. It's bulit with default Bootstrap coponents and utilities with little customization.
+      </div>
+
+      <div class="prices">
+        <div class="price-item">
+          <div class="price-item-title">
+            Free
+          </div>
+          <div class="price-item-price">
+            $0<span class="price-item-month"> / mo</span>
+          </div> 
+          <div calss="price-item-detail">
+            10 users included
+          </div>
+          <div calss="price-item-detail">
+            2 GB of storage
+          </div>
+          <div calss="price-item-detail">
+            Email support
+          </div>
+          <div calss="price-item-detail">
+           Help center access 
+          </div>                              
+          <button class="price-item-button">
+            sign up for free
+          </button>
+        </div>
+
+        <div class="price-item">
+          <div class="price-item-title">
+            Free
+          </div>
+          <div class="price-item-price">
+            $0<span class="price-item-month"> / mo</span>
+          </div> 
+          <div calss="price-item-detail">
+            20 users included
+          </div>
+          <div calss="price-item-detail">
+            10 GB of storage
+          </div>
+          <div calss="price-item-detail">
+            Priority email support
+          </div>
+          <div calss="price-item-detail">
+            Help center access
+          </div>                              
+          <button class="price-item-button price-item-button--active">
+            sign up for free
+          </button>
+        </div>
+
+        <div class="price-item">
+          <div class="price-item-title">
+            Free
+          </div>
+          <div class="price-item-price">
+            $0<span class="price-item-month"> / mo</span>
+          </div> 
+          <div calss="price-item-detail">
+            30 users included
+          </div>
+          <div calss="price-item-detail">
+            10 GB of storage
+          </div>
+          <div calss="price-item-detail">
+            15 GB of storage
+          </div>
+          <div calss="price-item-detail">
+            Phone and email support
+          </div>
+          <button class="price-item-button price-item-button--active">
+            Help center access
+          </button>
+        </div>        
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
